@@ -16,7 +16,7 @@ for rig in rigs:
   for device in rig.devices:
     print (device.name)
 ```
-
+# configuration
 When creating the NiceHash object you have to pass your connection credential.
 **api_url** you have two choice:
 * https://api-test.nicehash.com for testing, in testing you probably will not have any mining rig.
@@ -32,5 +32,6 @@ The key you generate in you account profile
 **api_secret**
 The secret you generate in you account profile
 
+## Screenshot
 Here is a screen shot of the location for the organisation id and where to create the API key.
 ![api_creation](https://github.com/nslythe/pynicehash/raw/main/assets/api_creation.png)
