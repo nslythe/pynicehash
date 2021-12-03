@@ -4,13 +4,13 @@ For now pynicehash support only rig management, get and set mining rig state.
 
 # usage
 
-`
+```
 nh = pynicehash.NiceHash(api_url, organisation_id, api_key, api_secret)
 
 rigs = nh.get_rigs()
 
 for rig in rigs: 
-`
+```
 
 When creating the NiceHash object you have to pass your connection credential.
 * api_url you have two choice:
