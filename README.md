@@ -1,5 +1,5 @@
 # pynicehash
-This is a library to interact with the nicehash API v2.
+This is a library to interact with the nicehash API v2 in python.
 
 # feature
 For now pynicehash support only rig management, get and set mining rig state.
