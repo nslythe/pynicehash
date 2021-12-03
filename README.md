@@ -1,4 +1,6 @@
 # pynicehash
+This is a library to interact with the nicehash API v2.
+
 # feature
 For now pynicehash support only rig management, get and set mining rig state.
 
