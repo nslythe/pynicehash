@@ -27,4 +27,4 @@ The organisation_id is the the id you can find in you page where you create you 
 
 * api_secret
 
-![api_creation](assets/api_creation.png)
+![api_creation](https://github.com/nslythe/pynicehash/raw/main/assets/api_creation.png)
