@@ -9,7 +9,10 @@ nh = pynicehash.NiceHash(api_url, organisation_id, api_key, api_secret)
 
 rigs = nh.get_rigs()
 
-for rig in rigs: 
+for rig in rigs:
+  print (rig.name)
+  for device in rig.devices:
+    print (device.name)
 ```
 
 When creating the NiceHash object you have to pass your connection credential.
