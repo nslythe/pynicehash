@@ -32,6 +32,6 @@ The key you generate in you account profile
 **api_secret**
 The secret you generate in you account profile
 
-## Screenshot
+## screenshot
 Here is a screen shot of the location for the organisation id and where to create the API key.
 ![api_creation](https://github.com/nslythe/pynicehash/raw/main/assets/api_creation.png)
