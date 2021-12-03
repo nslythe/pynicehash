@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pynicehash",
-    version="0.0.1",
+    version="0.0.5",
     author="Nicolas Slythe",
     author_email="pynicehash@slythe.net",
     description="Python to interac with Nicehash API v2",
@@ -23,4 +23,5 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
+    install_requires=["requests"]
 )
