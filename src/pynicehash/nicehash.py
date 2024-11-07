@@ -10,12 +10,6 @@ import logging
 
 from pynicehash.miningrig import MiningRig
 
-class MiningStatus(Enum):
-    START = "START"
-    STOP = "STOP"
-    POWER_MODE = "POWER_MODE"
-
-
 class NiceHash(object):
     def __init__(self, api_url, organisation_id, api_key, api_secret):
         self.api_url = api_url
@@ -54,7 +48,6 @@ class NiceHash(object):
             message += bytearray(body_json, 'utf-8')
 
         digest = hmac.new(bytearray(self.api_secret, 'utf-8'), message, hashlib.sha256).hexdigest()
-        xauth = self.api_key + ":" + digest
 
         return {
             "X-Time": str(x_time),
