@@ -1,5 +1,13 @@
 
+import enum
 from . import mining_status
+
+class DeviceMiningStatusEnum(enum.Enum):
+    OFFLINE = -1
+    INACTIVE = 1
+    MINING = 2
+    BENCHMARKING = 3
+    DISABLED = 4
 
 class MiningDevice(object):
     def __init__(self, nicehash_api, parent_rig, data):
@@ -8,7 +16,7 @@ class MiningDevice(object):
         self.id = data["dsv"]["id"]
         self.name = data["dsv"]["name"]
         self.device_type = data["dsv"]["deviceClass"]
-        self.status = data["mdv"]["state"]
+        self.status = DeviceMiningStatusEnum(data["mdv"]["state"])
         
         self.temperature = -1
         for o in data["odv"]:
